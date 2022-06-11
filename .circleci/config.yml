@@ -14,7 +14,8 @@ jobs:
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
       - checkout
-      - run:
+      - run: 
+        name:«setup_remote_docker
           name: "Say hello"
           command: "echo Hello, World!"
 
@@ -23,4 +24,4 @@ jobs:
 workflows:
   say-hello-workflow:
     jobs:
-      - say-hello
+      - say-hello 
