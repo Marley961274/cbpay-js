@@ -16,6 +16,7 @@ jobs:
       - checkout
       - run: 
         name:«setup_remote_docker
+         add_ssh_keys
           name: "Say hello"
           command: "echo Hello, World!"
 
